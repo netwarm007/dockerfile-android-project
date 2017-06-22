@@ -4,4 +4,4 @@ ENV PROJECT /project
 WORKDIR $PROJECT
 COPY . $PROJECT
 RUN echo "sdk.dir=$ANDROID_HOME" > local.properties
-
+VOLUME $PROJECT
